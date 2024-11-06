@@ -1,0 +1,494 @@
+*{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;1,500;1,700&display=swap');
+
+
+body{
+    background-color: #ecf4fc;
+    overflow-x: hidden;
+}
+
+/*Style Tela Login*/
+.nav-logo{
+    width: 100vw;
+    display: flex;
+    height: 60px;
+    position: fixed;
+}
+.nav-logo div{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    line-height: 0;
+    margin: 30px 90px;
+}
+.nav-logo div h1{
+    font-size: 50px;
+}
+.nav-logo div h1, span{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #6414dc;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    
+}
+.div-right, .div-left{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 50vw;
+}
+img{
+    width: 70%;
+    max-width: 70%;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.titulo-login{
+    display: flex;
+    
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+}
+.titulo-login a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 50px;
+    width: 170px;
+}
+.titulo-login a:hover{
+    border-bottom: 1px solid black;
+}
+
+.form-login input{
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid gray;
+}
+.form-login input::placeholder{
+    font-size: 18px;
+}
+.a{
+    width: 85%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #6414dc;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Style Tela Dashboard*/
+.a-img-nav{
+    display: none;
+}
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin-bottom: 40px;
+    background-color: #34148c;
+}
+.navbar div{
+    display: flex;
+}
+.icon-nav{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+.icon-nav2{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+.a-nav{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #ecf4fc;
+    text-decoration: none;
+    font-size: 15px;
+}
+.main{
+    display: flex;
+    width: 100vw;
+    margin-left: 40px;
+    padding-left: 50px;
+}
+.main-left{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+.main-right{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.main-right>h2{
+    margin-bottom: 10px;
+}
+.grafico{
+    display: flex;
+    width: 60%;
+    height: 90%;
+    justify-content: center;
+    padding-top: 70px;
+}
+.main-left>fieldset{
+    background: white;
+}
+.main-left>fieldset>legend{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.field{
+    margin: 40px 0;
+}
+.entrada, .saldo, .saida{
+    padding: 25px 35px;
+}
+.saldo{
+    color: blue;
+    font-size: 20px;
+}
+.entrada{
+    color: green;
+    font-size: 20px;
+}
+.saida{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+/*Style Tela Nova Entrada*/
+
+.main-entrada, .main-despesa, .main-nova-conta{
+    background: #109010;
+    display: flex;
+    width: 500px;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+.form-nova{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: black;
+    padding-bottom: 25px;
+    font-size: 35px;
+}
+label{
+    color: black;
+    font-size: 18px;
+    align-self: start;
+}
+.input{
+    background: white;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+textarea{
+    height: 100px;
+    width: 250px;
+    background: white;
+}
+button{
+    padding: 9px;
+    background: #34148c;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.a-entrada{
+    padding-right: 15px;
+}
+
+/*Style Tela de Despesas*/
+
+.main-despesa{
+    background: #ec5353;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+
+/*Style Tela Contas*/
+
+.main-conta{
+    display: flex;
+    width: 100vw;
+}
+.conta>fieldset{
+    background: white;
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    margin: auto;
+}
+.field-left{
+    display: flex;
+    width: 100%;
+}
+.field-left>legend{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.conta-brasil, .conta-bradesco{
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 50px;
+}
+.h3{
+    margin: 0;
+    color:#109010;
+    font-size: 30px;
+}
+.conta-saldo-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    margin: auto;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+.field-right{
+    padding: 25px;
+    background: white;
+}
+.S{
+    font-size: 18px;
+}
+.span-saldo-total{
+    font-size: 30px;
+    color: #109010;
+}
+.button-nova-conta{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    color: black;
+}
+.a-conta{
+    color: #ecf4fc;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*Style Tela Nova Conta*/
+.div-conta{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-conta > select{
+    font-size: 18px;
+    background: white;
+    border-radius: 10px;
+    padding: 13px;
+    margin-bottom: 35px;
+    width: 300px;
+}
+
+/*Style Relatorio*/
+
+.fundorelatorio{
+    background-color: #ecf4fc;
+}
+.relatorio {
+    display: flex;
+    width: 45vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.field-rela>legend{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.titulo {
+    padding: 12px;
+    background-color: #34148c;
+    color: white;
+    font-size: 18px;
+}
+
+.linha:nth-child(even) {
+    background-color: #efecf3;
+}
+
+.linha:hover {
+    background-color: #ecf4fc;
+}
+
+.data, .descricao {
+    color: black;
+    font-size: 18px;
+    padding: 0 35px;
+}
+
+@media screen and (max-width:660px){
+    
+    .div-left{
+        display: none;
+    }
+    .div-right{
+        width: 100vw;
+
+    }
+    .form-login input::placeholder{
+        font-size: 15px;
+    }
+    .a{
+        width: 85%;
+        height: 40px;
+        font-size: 17px;
+    }
+    
+}
+
+@media screen and (max-width:1024px) {
+    .main-entrada, .main-despesa, .main-nova-conta{
+        width: 50%;
+    }
+    .form-nova{
+        width: 70%;
+    }
+}
+@media screen and (max-width:850px) {
+    .a-img-nav{
+        display: flex;
+    }
+    .a-nav, .icon-nav{
+        display: none;
+    }
+    .icon-nav2{
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+    .navbar{
+        padding: 15px 50px;
+    }
+}
+@media screen and (max-width:710px) {
+    .main-conta{
+        flex-direction: column;
+    }
+    .conta-saldo-total{
+        margin-top: 100px;
+        width: 30%;
+    }
+}
+@media screen and (max-width:600px) {
+    .main-entrada, .main-despesa, .main-nova-conta{
+        width: 70%;
+    }
+    .form-nova{
+        width: 80%;
+    }
+}
+@media screen and (max-width:426px) {
+    .main-entrada, .main-despesa, .main-nova-conta{
+        width: 90%;
+    }
+    .form-nova{
+        width: 90%;
+    }
+    .icon-nav2{
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+    }
+    .navbar{
+        padding: 20px 10px;
+    }
+    .form-login{
+        width: 100%;
+    }
+
+    .conta{
+        width: 100vw;
+    }
+    .field-left{
+        width: 100%;
+    }
+}
+
+
+
